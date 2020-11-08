@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: 'montserrat', sans-serif;
   text-decoration: none;
+  background-color: black;
   color: #dddd;
   /*color: #c6c5c0;*/
   /*color: #b42e0e;*/
@@ -18,7 +19,6 @@ body {
 /* FRONT PAGE */
 
 .front-page{
-  position: relative;
   background-color: black;
 }
 
@@ -168,11 +168,4 @@ body {
 
 .social_holder a:hover{
   color: white;
-}
-
-@media screen and (max-width: 420px) {
-  .social_holder a{
-    background-color: rgb(50,50,50,0.75);
-    border-top: -10px;
-  }
 }
