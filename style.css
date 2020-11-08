@@ -1,13 +1,27 @@
-*{
-  margin: 0;
-  padding: 0;
-}
-
 body {
   margin: 0;
+  padding: 0;
   font-family: 'montserrat', sans-serif;
+  text-decoration: none;
+  color: #dddd;
+  /*color: #c6c5c0;*/
+  /*color: #b42e0e;*/
+  /*color: #D4DADE;*/
+  /*color: #E94F64;*/
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* FRONT PAGE */
+
+.front-page{
+  position: relative;
   background-color: black;
 }
+
 
 .img {
   display: grid;
@@ -16,10 +30,149 @@ body {
 
 .center-fit {
   max-width: 100%;
-  max-height: 100vh;
+  max-height: calc(100vh - 4px);
   margin: auto;
 }
 
 .img-center {
   text-align: center;
+  z-index: -1;
+}
+
+/* NAV BAR */
+
+.nav-bar { 
+  position: absolute;
+  top: 0;
+  height: 75px;
+  width: 100%;
+}
+
+.nav-bar-inner {
+  position: relative;
+  margin: 20px 30px 15px 30px;
+  height: 40px;
+}
+
+.nav-bar-inner-left{
+  position: relative;
+  float: left;
+  line-height: 40px;
+}
+
+.nav-bar-inner-left a{
+  font-size: 30px;
+  font-weight: lighter;
+  text-decoration: none;
+  color: #dddd;
+}
+
+.nav-bar-inner-left a:hover {
+  color: white;
+}
+
+.nav-bar-inner-right{
+  position: relative;
+  float:right;
+  line-height: 40px;
+}
+
+.nav-bar-inner-right a{
+  font-size: 20px;
+  font-weight: lighter;
+  text-decoration: none;
+  color: #dddd;
+  margin: 0px 20px 0px 20px;
+}
+
+.nav-bar-inner-right a:hover {
+  color: white;
+}
+
+/* Nav bar when width is less than 950px */
+
+.icon{
+  display: none;
+  color: #dddd;
+  font-size: 30px;
+  position: relative;
+  float:right;
+  margin-right: 40px;
+  line-height: 40px;
+}
+
+.icon:hover{
+  color: white;
+}
+
+@media screen and (max-width: 950px) {
+  .nav-bar-inner-right a {
+    display: none;
+  }
+  .icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav-bar-responsive{
+    position: absolute;
+    top: 0;
+    width: 100%;
+  } 
+  .nav-bar-responsive a{
+    float: none;
+    display: block;
+  }
+  .nav-bar-inner-left {
+    display: block;
+    width: 100%;
+  }
+  .nav-bar-inner-right a{
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+  }
+
+  .nav-bar-inner-right a:hover{
+    color: white;
+  }
+}
+
+/* Nav bar when width is less than 530px */
+
+@media screen and (max-width: 530px) {
+  .nav-bar-responsive{
+    background-color: rgb(50,50,50,0.75);
+  }
+  .icon{
+    margin-right: 0;
+  }
+  .nav-bar-inner-right a{  
+    text-align: right; 
+  }
+}
+
+/* Social Icons */
+
+.social_holder{
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+  font-size: 25px;
+}
+
+.social_holder a{
+  color: #dddd;
+  text-decoration: none;
+}
+
+.social_holder a:hover{
+  color: white;
+}
+
+@media screen and (max-width: 420px) {
+  .social_holder a{
+    background-color: rgb(50,50,50,0.75);
+    border-top: -10px;
+  }
 }
