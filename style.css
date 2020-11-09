@@ -20,6 +20,7 @@ body {
 
 .front-page{
   background-color: black;
+  height: 100vh;
 }
 
 
@@ -30,7 +31,7 @@ body {
 
 .center-fit {
   max-width: 100%;
-  max-height: calc(100vh - 4px);
+  max-height: calc(100vh - 3.75px);
   margin: auto;
 }
 
@@ -42,7 +43,6 @@ body {
 /* NAV BAR */
 
 .nav-bar { 
-  position: absolute;
   top: 0;
   height: 75px;
   width: 100%;
@@ -58,6 +58,7 @@ body {
   position: relative;
   float: left;
   line-height: 40px;
+  font-weight: bold;
 }
 
 .nav-bar-inner-left a{
@@ -155,17 +156,42 @@ body {
 /* Social Icons */
 
 .social_holder{
+  display: block;
   position: absolute;
   bottom: 15px;
   right: 30px;
-  font-size: 25px;
+  font-size: 30px;
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
 }
 
 .social_holder a{
-  color: #dddd;
   text-decoration: none;
+  transition: all .2s ease-in-out; 
 }
 
 .social_holder a:hover{
-  color: white;
+  transform: scale(1.1);
+}
+
+#insta {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Secondary Pages*/
+.secondary-page{
+}
+
+.contents{
+  margin: 20px 25vw  0px 25vw;
+  background: grey;
+  text-align: center;
+}
+
+.contents a{
+
 }
