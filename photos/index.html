@@ -2,19 +2,15 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="./style.css" rel="stylesheet">
+<link href="../style.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>Lidiana Todoroff</title>
+<title>Photos</title>
 </head>
 <body>
-    <div class="front-page">
-        <!-- Background Image-->    
-        <div class="img-center">
-            <img class="center-fit" src="./photos/images/LidianaHeadshots-9.jpg">
-        </div>
+    <div class="secondary-page">
 
         <!-- Nav bar -->
-        <div class="nav-bar" id="my-nav-bar" style="position: absolute;"> 
+        <div class="nav-bar" id="my-nav-bar">
             <div class="nav-bar-inner">
 
                 <div class="nav-bar-inner-left">
@@ -33,26 +29,50 @@
             </div>
         </div>
 
+        <!-- Contents -->
+        <div class="content-holder">
+            <div class="content-title">
+                <a>Photos</a>
+            </div>
+
+            <div class="content">
+                <div class="row">
+                    <div class="column">
+                        <img src="./images/LidianaHeadshots-1.jpg">
+                        <img src="./images/LidianaHeadshots-5.jpg">
+                        <img src="./images/LidianaHeadshots-9.jpg">
+                        <img src="./images/LidianaHeadshots-13.jpg">
+                    </div>
+                    <div class="column">
+                        <img src="./images/LidianaHeadshots-3.jpg">
+                        <img src="./images/LidianaHeadshots-7.jpg">
+                        <img src="./images/LidianaHeadshots-11.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Social Icons -->
-        <div class="social_holder" style="position: absolute;">
+        <div class="social_holder">
             <a href="https://instagram.com/lidiana.todoroff?r=nametag" target="_blank" style="margin-right: 10px;" class="fa fa-instagram fa" id="insta"></a>
             <a href="https://www.imdb.com/name/nm12017878/?ref_=nv_sr_srsg_0" target="_blank" class="fa fa-imdb" style="color: #e29d04; margin-right: 10px;"></a>
             <a href="https://www.backstage.com/u/lidianatodoroff/" target="_blank" class="backstage"></a>
         </div>
-
     </div>
 
 
     <!-- Nav Bar-->
     <script>
         function myFunction() {
-          var x = document.getElementById("my-nav-bar");
-          if (x.className === "nav-bar") {
-            x.className += "-responsive";
-          } else {
-            x.className = "nav-bar";
-          }
+            var x = document.getElementById("my-nav-bar");
+            if (x.className === "nav-bar") {
+                x.className += "-responsive";
+            } else {
+                x.className = "nav-bar";
+            }
         }
-    </script>
+        </script>
+    </div>
+    
 </body>
 </html>
