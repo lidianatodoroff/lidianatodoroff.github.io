@@ -261,26 +261,60 @@ body {
 .biography-writing{
   padding-top: 30px;
   padding-left: 30px;
+  padding-right: 30px;
   padding-bottom: 10px;
   color: black;
 }
 
 .biography-writing a{
-  width: 50px;
   font-size: 20px;
   padding-bottom: 5px;
   margin-bottom: 10px;
   border-bottom-color: black;
   border-bottom-width: 2px;
   border-bottom-style: solid;
+
 }
 
 .biography-writing p{
-  margin-top:15px;
+  margin-top:10px;
 }
 
 @media screen and (max-width: 1080px) {
   .biography-writing{
+    padding-left: 10px
+  }
+}
+
+/* Resume */
+.resume-content img{
+  padding: 8px 0 10px 8px;
+}
+
+.resume-writing{
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  color: black;
+}
+
+.resume-writing a{
+  font-size: 20px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom-color: black;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+
+}
+
+.resume-writing p{
+  margin-top:0;
+}
+
+@media screen and (max-width: 1080px) {
+  .resume-writing{
     padding-left: 10px
   }
 }
