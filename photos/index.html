@@ -38,18 +38,18 @@
             <div class="content">
                 <div class="row">
                     <div class="column">
-                        <img src="https://lidianatodoroff.com/photos/images/SahalieFalls-1.jpg" loading="lazy">
-                        <img src="https://lidianatodoroff.com/photos/images/SahalieFalls-3.jpg" loading="lazy">
-                        <img src="https://lidianatodoroff.com/photos/images/LidianaHeadshots-1.jpg" loading="lazy">
-                        <img src="https://lidianatodoroff.com/photos/images/LidianaHeadshots-5.jpg" loading="lazy">
-                        <img src="https://lidianatodoroff.com/photos/images/LidianaHeadshots-9.jpg" loading="lazy">
-                        <img src="https://lidianatodoroff.com/photos/images/LidianaHeadshots-13.jpg" loading="lazy">
+                        <img class="lozad" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/SahalieFalls-1.jpg">
+                        <img class="lozad" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/SahalieFalls-3.jpg">
+                        <img class="lozad" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/LidianaHeadshots-1.jpg">
+                        <img class="lozad" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/LidianaHeadshots-5.jpg">
+                        <img class="lozad" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/LidianaHeadshots-9.jpg">
                     </div>
                     <div class="column">
-                        <img src="https://lidianatodoroff.com/photos/images/SahalieFalls-2.jpg" loading="lazy">
-                        <img src="https://lidianatodoroff.com/photos/images/LidianaHeadshots-3.jpg" loading="lazy">
-                        <img src="https://lidianatodoroff.com/photos/images/LidianaHeadshots-7.jpg" loading="lazy">
-                        <img src="https://lidianatodoroff.com/photos/images/LidianaHeadshots-11.jpg" loading="lazy">
+                        <img class="lozad" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/SahalieFalls-2.jpg">
+                        <img class="lozad" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/LidianaHeadshots-3.jpg">
+                        <img class="lozad" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/LidianaHeadshots-7.jpg">
+                        <img class="lozad" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/LidianaHeadshots-11.jpg">
+                        <img class="lozad" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/LidianaHeadshots-13.jpg">
                     </div>
                 </div>
             </div>
@@ -74,7 +74,15 @@
                 x.className = "nav-bar";
             }
         }
-        </script>
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
+    <script>
+        const observer = lozad();
+        observer.observe();
+    </script>
+
     </div>
     
 </body>
