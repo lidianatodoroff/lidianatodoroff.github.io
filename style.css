@@ -417,3 +417,8 @@ body {
     display: none;
   }
 }
+
+/* Image Gallery */
+.img-galllery:hover{
+  opacity: 0.7;
+}
