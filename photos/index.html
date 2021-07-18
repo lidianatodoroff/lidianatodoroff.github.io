@@ -5,6 +5,10 @@
 <link href="../style.css" rel="stylesheet">
 <link rel="icon" href="../icons/LidianaLogo.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Lazy loader https://github.com/craigbuckler/progressive-image.js -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.css">
+<!-- light box https://lokeshdhakar.com/projects/lightbox2/ -->
+<link href="../imports/css/lightbox.css" rel="stylesheet">
 <title>Photos</title>
 </head>
 <body>
@@ -38,89 +42,63 @@
 
             <div class="content">
                 <div class="row">
+                    <!-- Headshot Photos-->
                     <div class="column">
-                        <img class="lozad img-galllery" loading="lazy" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/SahalieFalls-1.jpg">
-                    </div>
-                    <div class="column">
-                        <img class="lozad img-galllery" loading="lazy" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/SahalieFalls-2.jpg">
-                    </div>
-                    <div class="column">
-                        <img class="lozad img-galllery" loading="lazy" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/SahalieFalls-3.jpg">
-                    </div>
-                    <div class="column">
-                        <img class="lozad img-galllery" loading="lazy" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/SahalieFalls-4.jpg">
-                    </div>
-                    <div class="column">
-                        <img class="lozad img-galllery" loading="lazy" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/LidianaHeadshots-1.jpg">
-                    </div>
-                    <div class="column">
-                        <img class="lozad img-galllery" loading="lazy" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/LidianaHeadshots-3.jpg">
-                    </div>
-                    <div class="column">
-                        <img class="lozad img-galllery" loading="lazy" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/LidianaHeadshots-5.jpg">
-                    </div>
-                    <div class="column">
-                        <img class="lozad img-galllery" loading="lazy" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/LidianaHeadshots-7.jpg">
-                    </div>
-                    <div class="column">
-                        <img class="lozad img-galllery" loading="lazy" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/LidianaHeadshots-9.jpg">
-                    </div>
-                    <div class="column">
-                        <img class="lozad img-galllery" loading="lazy" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/LidianaHeadshots-11.jpg">
-                    </div>
-                    <div class="column">
-                        <img class="lozad img-galllery" loading="lazy" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/LidianaHeadshots-13.jpg">
-                    </div>
-                    <div class="column">
-                        <img class="lozad img-galllery" loading="lazy" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/SeniorPhoto-1.jpg">
-                    </div>
-                    <div class="column">
-                        <img class="lozad img-galllery" loading="lazy" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/SeniorPhoto-2.jpg">
-                    </div>
-                    <div class="column">
-                        <img class="lozad img-galllery" loading="lazy" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/SeniorPhoto-3.jpg">
-                    </div>
-                    <div class="column">
-                        <img class="lozad img-galllery" loading="lazy" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/SeniorPhoto-4.jpg">
+                        <a href="./images/LidianaHeadshots/Cover/cover-1.jpg" data-lightbox="image-1" data-title="Untitled" class="progressive replace" onclick="this.href='./images/LidianaHeadshots/Full/full-1.jpg'"><img src="./images/LidianaHeadshots/Tiny/tiny-1.jpg" class="preview"></a>
                     </div>
                     
-                    <!--
                     <div class="column">
-                        <img class="lozad img-galllery" loading="lazy" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/SeniorPhoto-5.jpg">
+                        <a href="./images/LidianaHeadshots/Cover/cover-2.jpg" data-lightbox="image-1" data-title="Untitled" class="progressive replace" onclick="this.href='./images/LidianaHeadshots/Full/full-2.jpg'"><img src="./images/LidianaHeadshots/Tiny/tiny-2.jpg" class="preview"></a>
                     </div>
-                    -->
 
                     <div class="column">
-                        <img class="lozad img-galllery" loading="lazy" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/SeniorPhoto-6.jpg">
+                        <a href="./images/LidianaHeadshots/Cover/cover-3.jpg" data-lightbox="image-1" data-title="Untitled" class="progressive replace" onclick="this.href='./images/LidianaHeadshots/Full/full-3.jpg'"><img src="./images/LidianaHeadshots/Tiny/tiny-3.jpg" class="preview"></a>
                     </div>
+
                     <div class="column">
-                        <img class="lozad img-galllery" loading="lazy" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/SeniorPhoto-7.jpg">
+                        <a href="./images/LidianaHeadshots/Cover/cover-4.jpg" data-lightbox="image-1" data-title="Untitled" class="progressive replace" onclick="this.href='./images/LidianaHeadshots/Full/full-4.jpg'"><img src="./images/LidianaHeadshots/Tiny/tiny-4.jpg" class="preview"></a>
                     </div>
+
                     <div class="column">
-                        <img class="lozad img-galllery" loading="lazy" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/SeniorPhoto-8.jpg">
+                        <a href="./images/LidianaHeadshots/Cover/cover-5.jpg" data-lightbox="image-1" data-title="Untitled" class="progressive replace" onclick="this.href='./images/LidianaHeadshots/Full/full-5.jpg'"><img src="./images/LidianaHeadshots/Tiny/tiny-5.jpg" class="preview"></a>
                     </div>
+
                     <div class="column">
-                        <img class="lozad img-galllery" loading="lazy" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/SeniorPhoto-9.jpg">
+                        <a href="./images/LidianaHeadshots/Cover/cover-6.jpg" data-lightbox="image-1" data-title="Untitled" class="progressive replace" onclick="this.href='./images/LidianaHeadshots/Full/full-6.jpg'"><img src="./images/LidianaHeadshots/Tiny/tiny-6.jpg" class="preview"></a>
                     </div>
-                    
-                    <!--
+
                     <div class="column">
-                        <img class="lozad img-galllery" loading="lazy" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/SeniorPhoto-10.jpg">
+                        <a href="./images/LidianaHeadshots/Cover/cover-7.jpg" data-lightbox="image-1" data-title="Untitled" class="progressive replace" onclick="this.href='./images/LidianaHeadshots/Full/full-7.jpg'"><img src="./images/LidianaHeadshots/Tiny/tiny-7.jpg" class="preview"></a>
                     </div>
-                    -->
-                    
+
                     <div class="column">
-                        <img class="lozad img-galllery" loading="lazy" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/SeniorPhoto-11.jpg">
+                        <a href="./images/LidianaHeadshots/Cover/cover-8.jpg" data-lightbox="image-1" data-title="Untitled" class="progressive replace" onclick="this.href='./images/LidianaHeadshots/Full/full-8.jpg'"><img src="./images/LidianaHeadshots/Tiny/tiny-8.jpg" class="preview"></a>
                     </div>
+
                     <div class="column">
-                        <img class="lozad img-galllery" loading="lazy" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/SeniorPhoto-12.jpg">
+                        <a href="./images/LidianaHeadshots/Cover/cover-9.jpg" data-lightbox="image-1" data-title="Untitled" class="progressive replace" onclick="this.href='./images/LidianaHeadshots/Full/full-9.jpg'"><img src="./images/LidianaHeadshots/Tiny/tiny-9.jpg" class="preview"></a>
                     </div>
+
                     <div class="column">
-                        <img class="lozad img-galllery" loading="lazy" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/SeniorPhoto-13.jpg">
+                        <a href="./images/LidianaHeadshots/Cover/cover-10.jpg" data-lightbox="image-1" data-title="Untitled" class="progressive replace" onclick="this.href='./images/LidianaHeadshots/Full/full-10.jpg'"><img src="./images/LidianaHeadshots/Tiny/tiny-10.jpg" class="preview"></a>
                     </div>
+
                     <div class="column">
-                        <img class="lozad img-galllery" loading="lazy" data-placeholder-background="white" data-src="https://lidianatodoroff.com/photos/images/SeniorPhoto-14.jpg">
+                        <a href="./images/LidianaHeadshots/Cover/cover-11.jpg" data-lightbox="image-1" data-title="Untitled" class="progressive replace" onclick="this.href='./images/LidianaHeadshots/Full/full-11.jpg'"><img src="./images/LidianaHeadshots/Tiny/tiny-11.jpg" class="preview"></a>
                     </div>
+
+                    <div class="column">
+                        <a href="./images/LidianaHeadshots/Cover/cover-12.jpg" data-lightbox="image-1" data-title="Untitled" class="progressive replace" onclick="this.href='./images/LidianaHeadshots/Full/full-12.jpg'"><img src="./images/LidianaHeadshots/Tiny/tiny-12.jpg" class="preview"></a>
+                    </div>
+
+                    <div class="column">
+                        <a href="./images/LidianaHeadshots/Cover/cover-13.jpg" data-lightbox="image-1" data-title="Untitled" class="progressive replace" onclick="this.href='./images/LidianaHeadshots/Full/full-13.jpg'"><img src="./images/LidianaHeadshots/Tiny/tiny-13.jpg" class="preview"></a>
+                    </div>
+
+                    <div class="column">
+                        <a href="./images/LidianaHeadshots/Cover/cover-14.jpg" data-lightbox="image-1" data-title="Untitled" class="progressive replace" onclick="this.href='./images/LidianaHeadshots/Full/full-14.jpg'"><img src="./images/LidianaHeadshots/Tiny/tiny-14.jpg" class="preview"></a>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -152,12 +130,10 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
-
-    <script>
-        const observer = lozad();
-        observer.observe();
-    </script>
-
+<!-- Light Box -->
+<script src="./imports/js/lightbox-plus-jquery.min.js"></script>
+ <!-- Lazy Loader -->
+ <script src="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.js"></script>
     <script>
         var target = document.querySelector("footer");
 
