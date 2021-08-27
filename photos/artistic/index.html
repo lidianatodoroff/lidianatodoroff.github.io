@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../style.css" rel="stylesheet">
+<link rel="icon" href="../../icons/LidianaLogo.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Lazy loader https://github.com/craigbuckler/progressive-image.js -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.css">
+<!-- light box https://lokeshdhakar.com/projects/lightbox2/ -->
+<link href="../../imports/css/lightbox.css" rel="stylesheet">
+
+<title>Artistic</title>
+</head>
+<body>
+    <div class="secondary-page">
+
+        <!-- Nav bar -->
+        <div class="nav-bar" id="my-nav-bar">
+            <div class="nav-bar-inner">
+
+                <div class="nav-bar-inner-left">
+                    <a href="https://lidianatodoroff.com/">Lidiana Todoroff</a>
+                </div>
+
+                <div class="nav-bar-inner-right">
+                    <a href="https://lidianatodoroff.com/biography/">Biography</a>
+                    <a href="https://lidianatodoroff.com/resume/">Resume</a>
+                    <a href="https://lidianatodoroff.com/reels/">Reels</a>
+                    <a style="@media(min-width: 950px){margin: 0px 0px 0px 20px;}" href="https://lidianatodoroff.com/photos/">Photos</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Contents -->
+        <div class="content-holder">
+            <div class="content-title">
+                <a>Artistic</a>
+            </div>
+
+            <div class="content">
+                <div class="row">
+                    <div class="column">
+                        <a href="../images/SahalieFalls/Cover/cover-1.jpg" data-lightbox="image-1" data-title="Sahalie Falls" class="progressive replace" onclick="this.href='../images/SahalieFalls/Full/full-1.jpg'"><img src="../images/SahalieFalls/Tiny/tiny-1.jpg" class="preview"></a>
+                    </div>
+
+                    <div class="column">
+                        <a href="../images/SahalieFalls/Cover/cover-2.jpg" data-lightbox="image-1" data-title="Sahalie Falls" class="progressive replace" onclick="this.href='../images/SahalieFalls/Full/full-2.jpg'"><img src="../images/SahalieFalls/Tiny/tiny-2.jpg" class="preview"></a>
+                    </div>
+
+                    <div class="column">
+                        <a href="../images/SahalieFalls/Cover/cover-3.jpg" data-lightbox="image-1" data-title="Sahalie Falls" class="progressive replace" onclick="this.href='../images/SahalieFalls/Full/full-3.jpg'"><img src="../images/SahalieFalls/Tiny/tiny-3.jpg" class="preview"></a>
+                    </div>
+
+                    <div class="column">
+                        <a href="../images/SeniorPhotos/Cover/cover-2.jpg" data-lightbox="image-1" data-title="Senior Photos" class="progressive replace" onclick="this.href='../images/SeniorPhotos/Full/full-2.jpg'"><img src="../images/SeniorPhotos/Tiny/tiny-2.jpg" class="preview"></a>
+                    </div>
+
+                    <div class="column">
+                        <a href="../images/SeniorPhotos/Cover/cover-6.jpg" data-lightbox="image-1" data-title="Senior Photos" class="progressive replace" onclick="this.href='../images/SeniorPhotos/Full/full-6.jpg'"><img src="../images/SeniorPhotos/Tiny/tiny-6.jpg" class="preview"></a>
+                    </div>
+                    
+                    <div class="column">
+                        <a href="../images/SeniorPhotos/Cover/cover-8.jpg" data-lightbox="image-1" data-title="Senior Photos" class="progressive replace" onclick="this.href='../images/SeniorPhotos/Full/full-8.jpg'"><img src="../images/SeniorPhotos/Tiny/tiny-8.jpg" class="preview"></a>
+                    </div>
+                    
+                    <div class="column">
+                        <a href="../images/SeniorPhotos/Cover/cover-12.jpg" data-lightbox="image-1" data-title="Senior Photos" class="progressive replace" onclick="this.href='../images/SeniorPhotos/Full/full-12.jpg'"><img src="../images/SeniorPhotos/Tiny/tiny-12.jpg" class="preview"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Social Icons -->
+        <div class="social_holder">
+            <a href="https://instagram.com/lidiana.todoroff?r=nametag" target="_blank" style="margin-right: 10px;" class="fa fa-instagram fa" id="insta"></a>
+            <a href="https://www.imdb.com/name/nm12017878/?ref_=nv_sr_srsg_0" target="_blank" class="fa fa-imdb" style="color: #e29d04; margin-right: 10px;"></a>
+            <a href="https://www.backstage.com/u/lidianatodoroff/" target="_blank" class="backstage"></a>
+        </div>
+
+        <!-- Back to Top-->
+        <button class="scrollToTopBtn">&uarr;</button>
+
+        <footer></footer>
+    </div>
+
+
+    <!-- Nav Bar-->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("my-nav-bar");
+            if (x.className === "nav-bar") {
+                x.className += "-responsive";
+            } else {
+                x.className = "nav-bar";
+            }
+        }
+    </script>
+
+    ]<!-- Light Box -->
+    <script src="../imports/js/lightbox-plus-jquery.min.js"></script>
+
+    <!-- Lazy Loader -->
+    <script src="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.js"></script>
+    <script>
+        var target = document.querySelector("footer");
+
+        var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
+        var rootElement = document.documentElement
+
+        function callback(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            scrollToTopBtn.classList.add("showBtn")
+            } else {
+            scrollToTopBtn.classList.remove("showBtn")
+            }
+        });
+        }
+
+        function scrollToTop() {
+        rootElement.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+        }
+        scrollToTopBtn.addEventListener("click", scrollToTop);
+            
+        let observer2 = new IntersectionObserver(callback);
+        observer2.observe(target);
+    </script>
+
+</body>
+</html>
