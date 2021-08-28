@@ -44,13 +44,23 @@
 
             <div class="content">
                 <div class="row">
-                    <!-- Headshot Photos-->
-                    <div class="column">
-                        <a href="../images/LidianaHeadshots/Cover/cover-1.jpg" data-lightbox="image-1" data-title="Headshots" class="progressive replace" onclick="this.href='../images/LidianaHeadshots/Full/full-1.jpg'"><img src="../images/LidianaHeadshots/Tiny/tiny-1.jpg" class="preview"></a>
+                    <div class="cover-column">
+                        <div class="container">
+                            <img src="./images/LidianaHeadshots/Cover/cover-1.jpg" class="overlay-img" onclick="window.open('./headshot','_self');">
+                            <div class="middle">
+                              <div class="overlay-text">Headshots</div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="column">
-                        <a href="../images/SahalieFalls/Cover/cover-1.jpg" data-lightbox="image-1" data-title="Sahalie Falls" class="progressive replace" onclick="this.href='../images/SahalieFalls/Full/full-1.jpg'"><img src="../images/SahalieFalls/Tiny/tiny-1.jpg" class="preview"></a>
+                    <div class="cover-column">
+                        <div class="container">
+                            <img src="./images/SahalieFalls/Cover/cover-1.jpg" class="overlay-img" onclick="window.open('./artistic','_self');">
+                            <div class="middle">
+                              <div class="overlay-text">Artistic</div>
+                            </div>
+                        </div>
+                        <!--<img src="./images/SahalieFalls/Cover/cover-1.jpg">-->
                     </div>
                 </div>
             </div>
@@ -64,8 +74,7 @@
         </div>
 
         <!-- Back to Top-->
-        <button class="scrollToTopBtn">&uarr;</button>
-
+        
         <footer></footer>
     </div>
 
