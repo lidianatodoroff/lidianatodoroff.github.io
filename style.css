@@ -253,6 +253,12 @@ body {
   cursor: pointer;
 }
 
+.column-wide{
+  margin-top: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
 .cover-column {
   -ms-flex: 33%;
   flex: 33%;
